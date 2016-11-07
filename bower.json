@@ -2,17 +2,13 @@
   "name": "ng-truncate",
   "version": "0.0.1",
   "description": "Truncate filter for angular",
-  "main": [
-    "ng-truncate.js"
-  ],
+  "main": "ng-truncate.js",
   "keywords": [
     "angular",
     "truncate",
     "ng"
   ],
-  "authors": [
-    "Dmitry Kalinin <dmitry.kalinin.email@gmail.com>"
-  ],
+  "authors": "Dmitry Kalinin <dmitry.kalinin.email@gmail.com>",
   "license": "MIT",
   "ignore": [
     "**/.*",
