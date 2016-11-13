@@ -4,9 +4,14 @@ angular.module('ngTruncate', [])
     return function (text, truncateLength, end, fullWords) {
         if (!truncateLength || typeof truncateLength !== 'number') return;
 
-        end = end || '...';
+        try {
+          var count = text.length;
+        } catch (e) {
+          var count = 0;
+        }
 
-        if (text.length < truncateLength) return text;
+        end = end || '...';
+        if (count < truncateLength) return text;
 
         if (fullWords) {
             var prevNewStr, newStr = '',
